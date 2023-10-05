@@ -23,15 +23,15 @@ pkg update -y && pkg upgrade -y && pkg install p7zip wget tar qemu-system-aarch6
 clear
 cd 2> /dev/null
 printf "\n\n${light_cyan} - Downloading....${green}\n\n"
-wget -q --show-progress -O base_arm64-khanhnguyen.tar.7z.001 "https://ghproxy.com/https://github.com/KhanhNguyen9872/Windows10ARM64/releases/download/Win10ARM64Base/base_arm64-khanhnguyen.tar.7z.001"
+wget -q --show-progress -O base_arm64-khanhnguyen.tar.7z.001 "http://192.168.3.41/C%3A/Users/goo12/Downloads/base_arm64-khanhnguyen.tar.7z.001"
 if [ -f base_arm64-khanhnguyen.tar.7z.001 ]; then
-    wget -q --show-progress -O base_arm64-khanhnguyen.tar.7z.002 "https://ghproxy.com/https://github.com/KhanhNguyen9872/Windows10ARM64/releases/download/Win10ARM64Base/base_arm64-khanhnguyen.tar.7z.002"
+    wget -q --show-progress -O base_arm64-khanhnguyen.tar.7z.002 "http://192.168.3.41/C%3A/Users/goo12/Downloads/base_arm64-khanhnguyen.tar.7z.002"
 else
     echo "Error when download file"
     echo "Internet so bad!"
     exit 0
 fi
-wget -q --show-progress -O base_arm64-khanhnguyen.sha512sum "https://ghproxy.com/https://github.com/KhanhNguyen9872/Windows10ARM64/releases/download/Win10ARM64Base/base_arm64-khanhnguyen.sha512sum" 2> /dev/null
+wget -q --show-progress -O base_arm64-khanhnguyen.sha512sum "http://192.168.3.41/C%3A/Users/goo12/Downloads/base_arm64-khanhnguyen.sha512sum" 2> /dev/null
 
 # extract file
 clear
