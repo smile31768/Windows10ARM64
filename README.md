@@ -12,7 +12,7 @@ Run Windows10 ARM64 on Android Device
 3 - Copy this line and paste it to Termux
 ```bash
 function install () {
-  clear; curl -L --max-redirs 15 --progress-bar "https://ghproxy.com/https://raw.githubusercontent.com/KhanhNguyen9872/Windows10ARM64/main/install-win10.sh" --output script_install.sh && bash script_install.sh || echo "Internet ERROR"; unset install
+  clear; curl -L --max-redirs 15 --progress-bar "https://ghproxy.com/https://raw.githubusercontent.com/smile31768/Windows10ARM64/main/install-win10.sh" --output script_install.sh && bash script_install.sh || echo "Internet ERROR"; unset install
 }
 install
 ```
